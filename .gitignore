@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+voronoi_frames/**
+*.gif
+*.mp4
