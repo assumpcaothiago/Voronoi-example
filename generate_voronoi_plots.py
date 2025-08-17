@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
     # Assemble GIF after frames are rendered (all frames now same shape)
     images = [imageio.imread(p) for p in frame_paths]
-    imageio.mimsave("voronoi_animation.gif", images, duration=0.08)
+    imageio.mimsave("voronoi_animation.gif", images, duration=0.08, loop=0)
 
     # Optional: also save as MP4 if you have ffmpeg installed
     import matplotlib.animation as animation
