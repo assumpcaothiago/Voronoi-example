@@ -98,8 +98,7 @@ def generate_voronoi_plot(
     ax.set_autoscale_on(False)
 
     if save_path is not None:
-        # Important: DO NOT use bbox_inches="tight" (varies image size)
-        fig.savefig(save_path)
+        fig.savefig(save_path, bbox_inches="tight")
         plt.close(fig)
         return None
 
